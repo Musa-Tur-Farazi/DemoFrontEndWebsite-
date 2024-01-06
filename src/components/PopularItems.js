@@ -1,8 +1,6 @@
-// src/components/PopularItems.js
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import Modal from 'react-modal';
-import AddItemForm from './AddItemFormPopular';
 import './styles/PopularItems.css';
 import AddItemFormPopular from './AddItemFormPopular';
 
@@ -26,7 +24,6 @@ const PopularItems = () => {
     const popularItems = items.filter((item) => item.IsPopular);
 
     const handleAddItem = (newItem) => {
-      // Add the new item to the popularItems list
       setItems((prevItems) => [...prevItems, newItem]);
       setShowForm(false);
     };

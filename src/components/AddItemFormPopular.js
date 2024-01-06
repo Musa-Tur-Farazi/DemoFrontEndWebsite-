@@ -1,4 +1,3 @@
-// src/components/AddItemForm.js
 import React, { useState } from 'react';
 import Modal from 'react-modal';
 
@@ -7,28 +6,21 @@ const AddItemFormPopular = ({ onAddItem, onClose }) => {
   const [itemPrice, setItemPrice] = useState('');
 
   const handleAddItem = () => {
-    // Validate input
+
     if (!itemName.trim() || isNaN(parseFloat(itemPrice))) {
       alert('Please enter valid item name and price.');
       return;
     }
 
-    // Create a new item object
     const newItem = {
       Name: itemName.trim(),
       Price: parseFloat(itemPrice),
-      IsPopular: true, // Assuming newly added items are popular
-      // Add other properties as needed
+      IsPopular: true,
     };
-
-    // Call the onAddItem function passed from the parent component
     onAddItem(newItem);
-
-    // Clear form fields
     setItemName('');
     setItemPrice('');
 
-    // Close the modal
     onClose();
   };
 

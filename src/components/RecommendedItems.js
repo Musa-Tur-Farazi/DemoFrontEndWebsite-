@@ -1,8 +1,6 @@
-// src/components/RecommendedItems.js
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import Modal from 'react-modal';
-import AddItemForm from './AddItemFormPopular';
 import './styles/RecommendedItems.css';
 import AddItemFormRecommended from './AddItemFormRecommended';
 
@@ -25,7 +23,6 @@ const RecommendedItems = () => {
     };
     const recommendedItems = items.filter((item) => item.IsRecommended);
     const handleAddItem = (newItem) => {
-      // Add the new item to the popularItems list
       setItems((prevItems) => [...prevItems, newItem]);
       setShowForm(false);
     };
@@ -50,7 +47,6 @@ const RecommendedItems = () => {
               <img src={item.ImageUrl} alt={item.Name} />
               <h3>{item.Name}</h3>
               <p>Price: ${item.Price.toFixed(2)}</p>
-              {/* You can add more details based on your data */}
             </div>
           ))
         )}

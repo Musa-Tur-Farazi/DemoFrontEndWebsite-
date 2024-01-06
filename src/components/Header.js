@@ -1,10 +1,8 @@
-/* src/components/Header.js */
 import React from 'react';
 import './styles/Header.css';
 
 const Header = () => {
   const handleDropdownSelect = (selectedOption) => {
-    // Handle the selected option here (e.g., show/hide components, navigate, etc.)
     console.log(`Selected option: ${selectedOption}`);
   };
 

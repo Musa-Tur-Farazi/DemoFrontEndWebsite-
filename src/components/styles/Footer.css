@@ -1,6 +1,5 @@
-/* src/components/styles/Footer.css */
 .footer {
-  background-color: #ffa500; /* Use your desired orange color */
+  background-color: #ffa500;
   color: #000;
   text-align: center;
   padding: 20px;
@@ -44,7 +43,7 @@
   height: auto;
 }
 .social-logos img {
-  width: 30px; /* Adjust the size of social logos as needed */
+  width: 30px;
   margin: 5px;
   
 }
