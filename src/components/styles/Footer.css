@@ -1,0 +1,65 @@
+/* src/components/styles/Footer.css */
+.footer {
+  background-color: #ffa500; /* Use your desired orange color */
+  color: #000;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+
+
+}
+
+.text-and-email-box {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20%;
+}
+
+.subscribe-box {
+  display: flex;
+  margin-top: 10px;
+}
+
+.subscribe-box input {
+  padding: 10px;
+  width: 300px;
+}
+
+.image-container {
+  max-width: 300px;
+  margin-right: 10%;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+.social-logos img {
+  width: 30px; /* Adjust the size of social logos as needed */
+  margin: 5px;
+  
+}
+
+.company-logo {
+  color : #000;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-right : 70%;
+  font-size: x-large;
+}
+
+.copyright-line {
+  color : #000;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  margin-right : 50%;
+  font-size: smaller;
+
+}

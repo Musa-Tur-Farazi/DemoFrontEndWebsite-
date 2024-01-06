@@ -1,0 +1,41 @@
+/* src/components/styles/HeroSection.css */
+.hero-container {
+  margin: 100px; /* Adjust the margin as needed to create gaps around the hero-section */
+}
+
+.hero-section {
+  background-color: #ff8c00;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.text-content {
+  flex: 1;
+  text-align: left;
+  margin-right: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.image-container {
+  flex: 1;
+  text-align: right;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
